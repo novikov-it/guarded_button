@@ -33,10 +33,8 @@ class Guard with ChangeNotifier {
   /// externally, thus disabling listening buttons.
   void process(Function()? onPressed) async {
     if (onPressed != null && _startProcessing()) {
-      await Future.wait([
-        Future.value(onPressed()),
-        Future.delayed(minProcessingTime)
-      ]);
+      await Future.wait(
+          [Future.value(onPressed()), Future.delayed(minProcessingTime)]);
       _endProcessing();
     }
   }

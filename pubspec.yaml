@@ -1,6 +1,6 @@
 name: guarded_button
-description: Material buttons with guards
-version: 0.1.0
+description: Сircular progress indicator while processing and repeated click prevention for material buttons for better UX. 
+version: 0.1.2
 homepage: https://github.com/Disregard-Therest/guarded_button
 repository: https://github.com/Disregard-Therest/guarded_button.git
 

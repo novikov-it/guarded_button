@@ -43,8 +43,7 @@ class _State extends State<GuardedButtonChild> {
                   height: buttonChildHeight * 0.75,
                   child: CircularProgressIndicator(
                     color: widget.progressColor,
-                  )
-              ),
+                  )),
             ],
           );
         }
